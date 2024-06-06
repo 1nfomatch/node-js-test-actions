@@ -43,7 +43,7 @@ jobs:
     - name: Deploy COI VM
       uses: yc-actions/yc-coi-deploy@v1.0.1
       env:
-        BACKEND_IMAGE: ${{ env.NODEJS_IMAGE }}
+        NODEJS_IMAGE: ${{ env.NODEJS_IMAGE }}
         YC_VM_SSH: ${{ secrets.YC_VM_SSH }}
         YC_VM_USERNAME: ${{ secrets.YC_VM_USERNAME }}
       with:
