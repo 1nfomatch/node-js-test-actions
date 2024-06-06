@@ -1,0 +1,6 @@
+version: '3.7'
+
+services:
+  nodejs:
+    image: {{ env.NODEJS_IMAGE }}
+    restart: always
